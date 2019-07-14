@@ -21,7 +21,7 @@ public class ItemManager : MonoBehaviour
 
   void Update()
   {
-    // if (OVRInput.Get(OVRInput.Button.PrimaryIndexTrigger))
+    if (Input.GetKeyDown(KeyCode.Space))
     {
       if (triggerFlag == false)
       {
@@ -43,7 +43,7 @@ public class ItemManager : MonoBehaviour
     {
       if (triggerFlag == true)
       {
-        // if (OVRInput.GetUp(OVRInput.Button.PrimaryIndexTrigger))
+        if (Input.GetKeyUp(KeyCode.Space))
         {
           steps++;
           _item.receiveSteps();
@@ -64,6 +64,8 @@ public class ItemManager : MonoBehaviour
       itemFlag = false;
       triggerFlag = false;
     }
+
+    Debug.Log(steps);
   }
 
   void LateUpdate()
