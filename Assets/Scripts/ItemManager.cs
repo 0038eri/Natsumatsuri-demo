@@ -60,7 +60,6 @@ public class ItemManager : MonoBehaviour
     }
     else if (steps == 5)
     {
-      steps = 0;
       itemFlag = false;
       triggerFlag = false;
     }
@@ -86,6 +85,10 @@ public class ItemManager : MonoBehaviour
       {
         steps = 5;
       }
+    }
+    else if (steps == 5)
+    {
+      steps = 0;
     }
   }
 

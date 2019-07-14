@@ -11,6 +11,8 @@ public class Item : MonoBehaviour
   private GameObject itemManager;
   private ItemManager item_manager;
 
+  private int colTimer = 0;
+
   void Start()
   {
     itemManager = GameObject.Find("GameObject");
@@ -27,13 +29,21 @@ public class Item : MonoBehaviour
 
   }
 
-  void OnCollisionEnter(Collision col)
-  {
-    if (col.gameObject.tag == "field")
-    {
-      Destroy(this.gameObject);
-    }
-  }
+  // void OnCollisionStay(Collision col)
+  // {
+  //   if (col.gameObject.tag == "field")
+  //   {
+  //     if (colTimer < 20)
+  //     {
+  //       colTimer++;
+  //     }
+  //     else
+  //     {
+  //       Destroy(this.gameObject);
+  //     }
+  //   }
+  //   Debug.Log("colTimer:" + colTimer);
+  // }
 
   public void receiveSteps()
   {
