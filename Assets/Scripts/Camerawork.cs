@@ -10,7 +10,7 @@ public class Camerawork : MonoBehaviour
 
   void Update()
   {
-    if (Input.GetKey(KeyCode.LeftAlt))
+    if (Input.GetKey(KeyCode.LeftAlt) || Input.GetKey(KeyCode.RightAlt))
     {
       float X_Rotation = Input.GetAxis("Mouse X");
       float Y_Rotation = Input.GetAxis("Mouse Y");

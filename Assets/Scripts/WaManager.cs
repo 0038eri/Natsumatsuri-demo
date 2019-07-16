@@ -3,12 +3,12 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class ItemManager : MonoBehaviour
+public class WaManager : MonoBehaviour
 {
   public GameObject item_prefab;
 
-  private GameObject item;
-  private Item _item;
+  private GameObject wa;
+  private Wa _item;
 
   private int steps = 0;
   private bool itemFlag = false;
@@ -34,8 +34,8 @@ public class ItemManager : MonoBehaviour
     {
       if (itemFlag == false)
       {
-        item = Instantiate(item_prefab, transform.position, transform.rotation);
-        _item = item.GetComponent<Item>();
+        wa = Instantiate(item_prefab, transform.position, transform.rotation);
+        _item = wa.GetComponent<Wa>();
         itemFlag = true;
       }
     }
@@ -81,7 +81,7 @@ public class ItemManager : MonoBehaviour
     }
     else if (steps == 4)
     {
-      if (item == null)
+      if (wa == null)
       {
         steps = 5;
       }
