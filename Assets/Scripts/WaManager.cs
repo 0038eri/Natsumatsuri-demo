@@ -14,10 +14,9 @@ public class WaManager : MonoBehaviour
   private bool itemFlag = false;
   private bool triggerFlag = false;
 
-  void Start()
-  {
-
-  }
+  private int point = 0;
+  [SerializeField] private int add;
+  [SerializeField] private Text text;
 
   void Update()
   {
@@ -64,7 +63,7 @@ public class WaManager : MonoBehaviour
       triggerFlag = false;
     }
 
-    Debug.Log(steps);
+    text.text = "point: " + point.ToString();
   }
 
   void LateUpdate()
@@ -83,6 +82,7 @@ public class WaManager : MonoBehaviour
     {
       if (wa == null)
       {
+        point += add;
         steps = 5;
       }
     }

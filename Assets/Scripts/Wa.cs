@@ -43,7 +43,6 @@ public class Wa : MonoBehaviour
         Destroy(this.gameObject);
       }
     }
-    Debug.Log("colTimer:" + colTimer);
   }
 
   public void receiveSteps()

@@ -56,11 +56,12 @@
      <Compile Include="Assets\Scripts\ButtonAction.cs" />
      <Compile Include="Assets\Scripts\Camerawork.cs" />
      <Compile Include="Assets\Scripts\DebugGame.cs" />
-     <Compile Include="Assets\Scripts\Judgment.cs" />
      <Compile Include="Assets\Scripts\shatekiManager.cs" />
      <Compile Include="Assets\Scripts\StartScn.cs" />
      <Compile Include="Assets\Scripts\Wa.cs" />
      <Compile Include="Assets\Scripts\WaManager.cs" />
+     <Compile Include="Assets\Scripts\waterHeight.cs" />
+     <Compile Include="Assets\Scripts\yoyoManager.cs" />
      <Compile Include="Assets\Scripts\YoyoScn.cs" />
  <Reference Include="UnityEditor.StandardEvents">
  <HintPath>/Users/eririn/github/Natsumatsuri-demo/Library/ScriptAssemblies/UnityEditor.StandardEvents.dll</HintPath>
